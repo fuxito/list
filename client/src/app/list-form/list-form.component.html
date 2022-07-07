@@ -1,0 +1,6 @@
+<form [formGroup]="listForm">
+  <input type="text" placeholder="New item" formControlName="item" />
+  <button (click)="addItem()">Add</button>
+</form>
+
+<app-list-view></app-list-view>
