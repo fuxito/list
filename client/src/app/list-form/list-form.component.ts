@@ -22,7 +22,9 @@ export class ListFormComponent implements OnInit {
 
   addItem(): void {
     if (this.listForm.value.item)
-      this.clientListService.postItem({ item: this.listForm.value.item });
+      this.clientListService
+        .postItem({ item: this.listForm.value.item })
+        .subscribe((data) => console.log(data));
     console.log(this.listArr);
     this.listForm.reset();
   }
