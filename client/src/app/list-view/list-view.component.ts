@@ -12,12 +12,12 @@ export class ListViewComponent implements OnInit {
   constructor(private clientListService: ClientListServiceService) {}
 
   ngOnInit(): void {
-    this.getAllItems();
+    // this.getAllItems();
   }
-  getAllItems(): void {
-    this.clientListService.getItems().forEach((item) => {
-      this.listArr.push(item.item);
-      console.log(item.item);
-    });
-  }
+  // getAllItems(): void {
+  //   this.clientListService.getItems().forEach((item) => {
+  //     this.listArr.push(item.item);
+  //     console.log(item.item);
+  //   });
+  // }
 }
